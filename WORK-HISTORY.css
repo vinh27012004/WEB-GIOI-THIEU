@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding: 10px 0px;
+    position: relative;
+    width: 100%;
+    z-index: 1000px;
+    background-color: #EEEEEE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none; /* Loại bỏ dấu chấm tròn mặc định của danh sách */
+    padding: 0;
+    margin: 0;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa của menu */
+    width: 100%; /* Đảm bảo menu trải dài ra toàn bộ không gian của phần tử cha */
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 10px 50px; /* Khoảng cách giữa các mục menu */
+    text-decoration: none;
+    color: #666; /* Màu chữ cho mục menu */
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.navigation li {
+    flex-grow: 1; /* Mỗi mục menu sẽ chiếm toàn bộ không gian khả dụng */
+    text-align: center; /* Căn giữa văn bản trong mỗi mục menu */   
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.job h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.job p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+

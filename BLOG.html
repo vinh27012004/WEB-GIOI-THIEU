@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BLOG.css">
+    <link rel="manifest" href="BLOG.js">
+    <script src="BLOG.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/178d07d37d.js" crossorigin="anonymous"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <nav class="main-nav">
+        <ul class="navigation">
+            <li><a href="index.html">HOME</a></li>  
+            <li><a href="ABOUTME.html">ABOUT ME</a></li>
+            <li><a href="SKILLS.html">SKILLS</a></li>
+            <li><a href="PROJECTS.html">PROJECTS</a></li>
+            <li><a href="WORK-HISTORY.html">WORK HISTORY</a></li>
+            <li><a href="BLOG.html" class="active">BLOG</a></li>
+        </ul>
+    </nav>
+    <div class="blog-container">
+        <div class="new-post">
+            <h2>Đăng Suy Nghĩ Mới</h2>
+            <textarea id="post-content" placeholder="Viết suy nghĩ của bạn ở đây..."></textarea>
+            <button onclick="addPost()">Đăng</button>
+        </div>
+        <div id="posts" class="posts">
+            <!-- Các bài đăng sẽ được thêm vào đây -->
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding: 10px 0px;
+    position: relative;
+    width: 100%;
+    z-index: 1000px;
+    background-color: #EEEEEE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 200px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none; /* Loại bỏ dấu chấm tròn mặc định của danh sách */
+    padding: 0;
+    margin: 0;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa của menu */
+    width: 100%; /* Đảm bảo menu trải dài ra toàn bộ không gian của phần tử cha */
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 10px 50px; /* Khoảng cách giữa các mục menu */
+    text-decoration: none;
+    color: #666; /* Màu chữ cho mục menu */
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.navigation li {
+    flex-grow: 1; /* Mỗi mục menu sẽ chiếm toàn bộ không gian khả dụng */
+    text-align: center; /* Căn giữa văn bản trong mỗi mục menu */
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto; /* Căn giữa container */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-post {
+    margin-bottom: 20px;
+}
+
+.new-post h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.new-post textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+}
+
+.new-post button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.new-post button:hover {
+    background-color: #218838;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 1.1em;
+}
